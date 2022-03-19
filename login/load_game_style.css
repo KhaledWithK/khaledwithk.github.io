@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  background-color: #24252A;
+}
+
+input[type=file]{
+  opacity: 0;
+  display: none;
+}
+
+button{
+  font-family: 'Kanit', sans-serif;
+  width: 200px;
+  height: 30px;
+  border-radius: 40px;
+  border: none;
+}
+
+.load-form {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 48.5%;
+  height: 100px;
+  width: 100px;
+  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%);
+  float: center;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 900px;
+  text-align: center;
+}
+
+.form h1 {
+  margin: 0;
+}
+
+.form input {
+  margin: 5px;
+}
+
+.form button{
+  margin: 5px;
+}
+/* 
+.form p {
+  font-size: 14px;
+  opacity: 0.7;
+} */

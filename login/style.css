@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  background-color: #24252A;
+}
+
+input[type=text] {
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+}
+
+button {
+  font-family: 'Kanit', sans-serif;
+  width: 200px;
+  height: 30px;
+  border-radius: 40px;
+  border: none;
+}
+
+.form-popup {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 48.5%;
+  height: 100px;
+  width: 100px;
+  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%);
+  float: center;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 900px;
+  text-align: center;
+}
+
+.form h1 {
+  margin: 0;
+}
+
+.form input {
+  margin: 5px;
+}
+
+.form button {
+  margin: 5px;
+}
+
+.form p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+#title-moderation {
+  margin: 0;
+  position: absolute;
+  font-size: 20px;
+  top: 15%;
+  left: 48.5%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Kanit', sans-serif;
+  float: center;
+  color: #a6dced;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="load_game_style.css" type="text/css" media="all" />
+  <script src="../js/load_score.js" type="text/javascript" charset="utf-8"></script>
+  <title>Load game</title>
+
+</head>
+<body>
+
+  <div class="load-form" id="load-form">
+    <div class="form" id="form">
+      <h1>
+        Select your file<br />To load
+      </h1>
+      <input type="file" name="file_picker" id="file_picker" value="" hidden="hidden" onchange="onTextUpdate()"/>
+      <span id="file-name">
+        Selected file <br />
+        file.txt
+      </span>
+      <button class="button" id="fake_file_picker" type="submit" >Pick your file</button>
+      <button type="submit" onclick="">Load game</button>
+    </div>
+  </div>
+  
+  <script type="text/javascript" charset="utf-8">
+    let file_name = document.getElementById("fake_file_picker");
+    let real_file_name = document.getElementById("file_picker");
+    file_name.addEventListener("click", function() {
+      real_file_name.click();
+    });
+  </script>
+
+</body>
+
+</html>

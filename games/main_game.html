@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Actual game</title>
+  <script src="../js/main_game.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/main_game_style.css" type="text/css" media="all" />
+</head>
+<body>
+  <div class="vs-title">
+    <h1>VS.</h1>
+  </div>
+
+  <div class="mod-title">
+    <span id="mod-title"></span>
+  </div>
+
+  <div class="counter">
+    <h6>Score: <span id="counter"></span></h6>
+  </div>
+
+  <div class="submit-form">
+    <button type="submit" onclick="setPlayerSelection()">Submit</button>
+  </div>
+
+  <div class="images">
+    <img id="player-img" src="../images/rock-paper-scissors/paper-hand.svg" alt="" />
+    <img id="computer-img" src="../images/rock-paper-scissors/rock-hand.svg" alt="" />
+  </div>
+
+  <div class="home-arrow">
+    <img src="../images/home-arrow.svg" id="back-arrow" onclick="openPopup()" />
+  </div>
+
+  <div class="back-popup" id="back-popup">
+    <div class="popup" id="popup">
+      <h1>
+        Do you want to save your score?
+      </h1>
+      <p>
+        Click yes or no
+      </p>
+      <button type="submit" onclick="toLoginPage()">Yes</button>
+      <button type="submit" onclick="closePopup()">No</button>
+    </div>
+  </div>
+  
+  <div class="select-form">
+    <select id="option-form">
+      <option value="paper">Paper</option>
+      <option value="scissor">Scissor</option>
+      <option value="rock">Rock</option>
+    </select>
+  </div>
+
+</body>
+</html>
