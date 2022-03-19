@@ -32,7 +32,7 @@ function openPopup() {
 function closePopup() {
     document.getElementById("option-form").style.opacity = 1;
     document.getElementById("back-popup").style.opacity = 0;
-    /*window.location.replace("../index.html");*/
+    window.location.replace("../index.html");
 }
 
 window.onload = function() {
