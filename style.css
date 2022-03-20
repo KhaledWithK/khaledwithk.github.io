@@ -1,73 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-*{
-  scroll-behavior: smooth;
+* {
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: #24252A;
+    background-color: #24252A;
 }
 
-.title {
-  margin: 0;
-  position: absolute;
-  top: 10%;
-  left: 47%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-family: "Open Sans", sans-serif;
-  color: #6272a4;
-  float: center;
+/*for mobile*/
+@media only screen and (max-width: 414px) {
+    .title {
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        color: #6272a4;
+        float: center;
+    }
+
+    .under-title {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        color: #99aab5;
+        float: center;
+    }
+
+    button {
+        background-color: #7289da;
+        width: 200px;
+        border-radius: 40px;
+        height: 30px;
+        font-family: 'Kanit', sans-serif;
+        text-decoration: none;
+        border: none;
+        transition: 0.5s;
+    }
+
+    button:hover {
+        box-shadow: 2px 5px #495b9c;
+        transform: scale(1.09);
+    }
+
+    .button-start {
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        float: center;
+    }
+
+    .button-load {
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        /* color: #6272a4; */
+        float: center;
+        color: white;
+    }
 }
 
-.under-title {
-  margin: 0;
-  position: absolute;
-  top: 18%;
-  left: 47%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-family: "Open Sans", sans-serif;
-  color: #99aab5;
-  float: center;
-}
+/*For Tablet*/
 
-button {
-  background-color: #7289da;
-  width: 200px;
-  border-radius: 40px;
-  height: 30px;
-  font-family: 'Kanit', sans-serif;
-  text-decoration: none;
-  border: none;
-  transition: 0.5s;
-}
+@media only screen and (max-width: 960px) {
+    .title {
+        margin: 0;
+        position: absolute;
+        top: 10%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        color: #6272a4;
+        float: center;
+    }
 
-button:hover {
-  box-shadow: 2px 5px #495b9c;
-  transform: scale(1.09);
-}
+    .under-title {
+        margin: 0;
+        position: absolute;
+        top: 18%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        color: #99aab5;
+        float: center;
+    }
 
-.button-start {
-  margin: 0;
-  position: absolute;
-  top: 45%;
-  left: 47%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-family: "Open Sans", sans-serif;
-  float: center;
-}
+    button {
+        background-color: #7289da;
+        width: 200px;
+        border-radius: 40px;
+        height: 30px;
+        font-family: 'Kanit', sans-serif;
+        text-decoration: none;
+        border: none;
+        transition: 0.5s;
+    }
 
-.button-load {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 47%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-family: "Open Sans", sans-serif;
-  /* color: #6272a4; */
-  float: center;
-  color: white;
+    button:hover {
+        box-shadow: 2px 5px #495b9c;
+        transform: scale(1.09);
+    }
+
+    .button-start {
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        float: center;
+    }
+
+    .button-load {
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: "Open Sans", sans-serif;
+        float: center;
+        color: white;
+    }
 }
