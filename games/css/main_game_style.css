@@ -9,6 +9,9 @@ body {
   scroll-behavior: smooth;
 }
 
+
+
+
 button {
   font-family: 'Kanit', sans-serif;
   width: 200px;
@@ -16,8 +19,8 @@ button {
   border-radius: 40px;
   border: none;
 }
-
-.select-form {
+@media only screen and (max-width: 500px){
+  .select-form {
   margin: 0;
   position: absolute;
   top: 70%;
@@ -42,7 +45,7 @@ select {
 .submit-form {
   margin: 0;
   position: absolute;
-  top: 79%;
+  top: 84%;
   left: 49%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
