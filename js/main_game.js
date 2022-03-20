@@ -25,12 +25,16 @@ function closePopupOnly() {
 }
 
 function openPopup() {
-    document.getElementById("option-form").style.opacity = 0;
+    if (!getOs() == "mobile") {
+        document.getElementById("option-form").style.opacity = 0;
+    }
     document.getElementById("back-popup").style.opacity = 1;
 }
 
 function closePopup() {
-    document.getElementById("option-form").style.opacity = 1;
+    if (!getOs() == "mobile") {
+        document.getElementById("option-form").style.opacity = 1;
+    }
     document.getElementById("back-popup").style.opacity = 0;
     window.location.replace("../index.html");
 }
@@ -114,5 +118,14 @@ function winner(winner) {
         if (winner == "n/a") {
             mod_title.innerHTML = "Its a write";
         }
+    }
+}
+
+function getOs() {
+    var ratio = window.devicePixelRatio || 1;
+    var w = screen.width * ratio;
+    var h = screen.height * ratio;
+    if (h == "500") {
+        return "mobile";
     }
 }
